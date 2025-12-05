@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arsip Data</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <div class="top-bar">
+        <h2>Arsip Data</h2>
+        <button id="toggleTheme">Dark / Light</button>
+    </div>
+
+    <div class="form-box">
+        <input type="hidden" id="editIndex">
+
+        <label>Judul</label>
+        <input type="text" id="title">
+
+        <label>Kategori</label>
+      <select id="category">
+        <option value="Dokumen">Dokumen</option>
+        <option value="Laporan">Laporan</option>
+    </select>
+        
+
+        <label>Tanggal</label>
+        <input type="date" id="date">
+
+        <label>Lampiran (Opsional)</label>
+        <input type="file" id="fileInput">
+
+        <button id="btnSave">Simpan</button>
+        <button id="btnClear">Bersihkan</button>
+    </div>
+
+    <hr>
+
+    <table id="tableData">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Judul</th>
+                <th>Kategori</th>
+                <th>Tanggal</th>
+                <th>Lampiran</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+    <script src="app.js"></script>
+    </body>
+    </html>
